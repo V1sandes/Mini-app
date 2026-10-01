@@ -1,0 +1,147 @@
+.cart-wrap {
+  position: relative;
+}
+
+.cart-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--ink);
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.cart-btn:hover {
+  background: var(--accent);
+}
+
+.cart-btn .count {
+  background: rgba(255, 255, 255, 0.22);
+  padding: 1px 8px;
+  border-radius: 100px;
+  font-size: 12px;
+}
+
+.cart-panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 300px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  box-shadow: 0 16px 40px rgba(26, 26, 26, 0.12);
+  padding: 18px;
+  z-index: 50;
+}
+
+.cart-empty {
+  color: var(--ink-soft);
+  text-align: center;
+  font-size: 13px;
+  padding: 12px 0;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.cart-item-info {
+  min-width: 0;
+  flex: 1;
+}
+
+.cart-item-name {
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0 0 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cart-item-price {
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.remove-btn {
+  width: 26px;
+  height: 26px;
+  border: 1px solid #f4d0cc;
+  background: transparent;
+  border-radius: 100px;
+  color: var(--danger);
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+  flex-shrink: 0;
+}
+
+.remove-btn:hover {
+  background: var(--danger);
+  border-color: var(--danger);
+  color: #fff;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 12px;
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+  margin-bottom: 10px;
+  color: var(--ink-soft);
+}
+
+.cart-total strong {
+  font-size: 17px;
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--ink);
+}
+
+.clear-btn {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  background: transparent;
+  color: var(--ink-soft);
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.clear-btn:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}

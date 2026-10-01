@@ -1,0 +1,22 @@
+.discount-btn {
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  background: transparent;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+
+.discount-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.discount-btn.active {
+  background: var(--danger);
+  border-color: var(--danger);
+  color: #fff;
+}

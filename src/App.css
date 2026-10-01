@@ -1,0 +1,157 @@
+.app {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 24px 20px 40px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+
+.title-link {
+  color: inherit;
+}
+
+.title {
+  font-size: 24px;
+  font-family: 'Playfair Display', Georgia, serif;
+  letter-spacing: -0.3px;
+}
+
+.cart-wrap {
+  position: relative;
+}
+
+.cart-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--ink);
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.cart-btn:hover {
+  background: var(--accent);
+}
+
+.cart-btn .count {
+  background: rgba(255, 255, 255, 0.22);
+  padding: 1px 8px;
+  border-radius: 100px;
+  font-size: 12px;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.movie-page {
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 32px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--ink-soft);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+.movie-page-name {
+  font-size: 30px;
+  font-family: 'Playfair Display', Georgia, serif;
+  margin: 0 0 8px;
+  letter-spacing: -0.5px;
+}
+
+.movie-page-author {
+  margin: 0 0 20px;
+  font-size: 14px;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.movie-meta {
+  display: inline-flex;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--ink-soft);
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.movie-meta span {
+  background: #f0ebe0;
+  padding: 4px 10px;
+  border-radius: 100px;
+}
+
+.movie-page-full {
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  max-width: 560px;
+}
+
+.movie-page-price {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.movie-page-price .new-price,
+.movie-page-price .current-price {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--ink);
+}
+
+.movie-page-price .old-price {
+  font-size: 16px;
+  color: #a8a8a8;
+  text-decoration: line-through;
+}
+
+.discount-tag {
+  background: var(--danger);
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.add-btn.big {
+  padding: 12px 28px;
+  font-size: 13px;
+  border-radius: 100px;
+  letter-spacing: 0.5px;
+}
